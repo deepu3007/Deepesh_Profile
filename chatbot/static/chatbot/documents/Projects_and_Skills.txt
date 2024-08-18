@@ -1,0 +1,59 @@
+Project Descriptions: Projects Done by Veera Deepesh Gondimalla 
+
+1. Conversational Chatbot for PDFs
+   Developed a sophisticated Retrieval-Augmented Generation (RAG) system designed to interact with and extract information from PDF documents. This project leverages LangChain and Chroma to enable querying of PDF content, employing the Gemini pro model for advanced language understanding. The application features a conversational interface where users can interact with the chatbot to ask questions about the document. Additional functionalities include a read-aloud feature for enhancing accessibility. Chroma DB is utilized for storing and managing vectorized document data, ensuring efficient and accurate retrieval of information. Technologies used: Python, LangChain, Chroma, Streamlit.
+
+2. Presentation Video Analysis using CV
+   Created an AI-powered tool to analyze presentation videos, focusing on evaluating and scoring five distinct personality traits of the presenter. This project involved developing a 3-D Conv-LSTM model, which is adept at processing and analyzing spatiotemporal patterns within video data. The model achieved an impressive RMSE (Root Mean Square Error) of 0.05 on the test set, reflecting high accuracy in personality trait assessment. The solution integrates various computer vision techniques to provide insightful feedback on presentation skills. Tools and techniques employed include Computer Vision, OpenCV for video processing, PyTorch for model development, and pydub for audio handling.
+
+3. Exploratory Data Analysis - Zomato Data
+   Conducted an in-depth exploratory data analysis (EDA) on a dataset from Zomato, focusing on dining and delivery trends. This project involved comprehensive data cleaning and preprocessing to prepare the dataset for analysis. Key insights were gained through data visualization and statistical analysis using Python libraries. The analysis aimed to uncover patterns in restaurant reviews, delivery times, and customer preferences. Tools used include NumPy and Pandas for data manipulation, Seaborn and Matplotlib for visualizations, and regular expressions (re) for text data processing. This project demonstrated skills in data wrangling and exploratory data analysis to derive actionable business insights.
+
+
+skills :-
+Skills that Deepesh possess :-
+Technical Skills:
+
+1. Python
+   A versatile programming language known for its readability and broad application in web development, data analysis, and artificial intelligence. It supports various libraries and frameworks for rapid development.
+
+2. Data Analytics
+   The process of examining and interpreting complex data sets to uncover patterns, trends, and insights. It involves using statistical techniques and tools to inform decision-making.
+
+3. Machine Learning
+   A subset of artificial intelligence where algorithms are used to identify patterns and make predictions based on data. It involves training models to improve performance over time.
+
+4. Deep Learning
+   A specialized branch of machine learning that uses neural networks with many layers to analyze and interpret complex data. It excels in tasks such as image and speech recognition.
+
+5. Natural Language Processing (NLP)
+   A field of artificial intelligence focused on the interaction between computers and human language. It involves tasks like text analysis, sentiment analysis, and language generation.
+
+6. Large Language Models (LLMs)
+   Advanced models trained on vast amounts of text data to generate and understand human language. They are used in applications such as chatbots and text completion.
+
+7. Computer Vision
+   A field of artificial intelligence that enables machines to interpret and make decisions based on visual data from the world. It includes image recognition, object detection, and video analysis.
+
+Tools and Frameworks:
+
+1. Scikit-learn
+   A Python library for machine learning that provides simple and efficient tools for data mining and data analysis. It supports a wide range of algorithms and is user-friendly.
+
+2. PyTorch
+   An open-source machine learning library known for its flexibility and dynamic computation graph. It is widely used for developing deep learning models and research.
+
+3. Hugging Face Framework
+   A library providing state-of-the-art natural language processing models and tools. It simplifies the use of pre-trained models for tasks such as text classification and generation.
+
+4. Git
+   A version control system that helps manage and track changes in code. It facilitates collaboration and code sharing among developers.
+
+5. NumPy
+   A fundamental library for numerical computing in Python, providing support for arrays and mathematical functions. It is essential for scientific computing and data analysis.
+
+6. Pandas
+   A Python library for data manipulation and analysis, offering data structures and operations for handling structured data. It is widely used for data wrangling and analysis.
+
+7. LangChain
+   A framework for building applications with language models by providing tools for integrating LLMs with data and workflows. It supports tasks such as document querying and conversational interfaces.

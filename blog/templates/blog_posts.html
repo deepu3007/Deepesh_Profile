@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Posts</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <h1>Blog Posts</h1>
+    <div id="blog-posts-container"></div>
+
+    <!-- Modal Structure -->
+    <div class="modal fade" id="blogPostModal" tabindex="-1" aria-labelledby="blogPostModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogPostModalLabel">Blog Post Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="modal-author">Author: Author Name</p>
+                    <p id="modal-content">Blog post content goes here.</p>
+                    <h6>Comments:</h6>
+                    <div id="comments-container">
+                        <!-- Comments will be dynamically inserted here -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'scripts.js' %}"></script> <!-- Link to your JS file -->
+</body>
+</html>

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Veera Deepesh Gondimalla</title>
+        <!-- Favicon-->
+        {% load static %}
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/portfolio.png' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'styles.css' %}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Veera Deepesh Gondimalla</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="{% static 'assets/avataaars.svg' %}" alt="..." />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Veera Deepesh Gondimalla</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">BTech - AI - Mahindra University</p>
+                <p class="masthead-subheading font-weight-light mb-0">Artificial Intelligence Intern - NLP - Computer Vision</p>
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="row justify-content-center">
+                        <!-- Education Block -->
+                        <div class="col-md-4 col-sm-6 mb-5">
+                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#educationModal">
+                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-white">Education</div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'assets/education.png' %}" alt="Education"/>
+                            </div>
+                        </div>
+                     <!-- Projects Block -->
+                    <div class="col-md-4 col-sm-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#projectsModal">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">Projects</div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'assets/projects.png' %}" alt="Projects"/>
+                        </div>
+                    </div>
+                            <!-- Experience Block -->
+                    <div class="col-md-4 col-sm-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#experienceModal">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">Experience</div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'assets/experience.png' %}" alt="Experience"/>
+                        </div>
+                    </div>
+                        <!-- Skills Block -->
+                    <div class="col-md-4 col-sm-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#skillsModal">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">Skills</div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'assets/skills.png' %}" alt="Skills"/>
+                        </div>
+                    </div>
+                    <!-- Extra Curricular Activities Block -->
+                    <div class="col-md-4 col-sm-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#extracurricularModal">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">Extra Curricular Activities</div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'assets/extracurricular.png' %}" alt="Extra Curricular Activities"/>
+                        </div>
+                    </div>
+                    <!-- Blogs Block -->
+                    <div class="col-md-4 col-sm-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#blogsModal">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">Blogs</div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'assets/blogs.png' %}" alt="Blogs"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-- About Section -->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading -->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About Me</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content -->
+                <div class="row">
+                    <div class="col-lg-6 ms-auto">
+                        <p class="lead">
+                            Hello! I'm Veera Deepesh Gondimalla, a student with a passion for Artificial intelligence. I specialize in AI and Data Science and have experience in various tools and technologies and am proficient in NLP, LLMs and Computer Vision. I also posses a good command in Machine learning and Deep Learning skills. I enjoy working on challenging projects and am always looking to learn and grow.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 me-auto">
+                        <p class="lead">
+                            With a background in BTech in Artificial Intelligence from Mahindra University and interning at AI Unika Technologies and Cyber Sapient , I have developed a keen eye for detail and a strong problem-solving skillset. Whether it's developing innovative solutions or diving deep into data, I strive for excellence and am committed to delivering top-notch results.
+                        </p>
+                    </div>
+                </div>
+                <!-- About Section Buttons -->
+                <div class="text-center mt-4">
+                    <!-- Resume Download Button -->
+                    <a class="btn btn-xl btn-outline-light" href="{% static 'assets/Veera_Deepesh_Gondimalla.pdf' %}" download>
+                        <i class="fas fa-download me-2"></i>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+
+            <!-- Contact Section -->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading -->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <form id="contactForm" method="post" data-contact-url="{% url 'contact' %}">
+                            {% csrf_token %}
+                            <!-- Name input -->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required />
+                                <label for="name">Full name</label>
+                                <div class="invalid-feedback">A name is required.</div>
+                            </div>
+                            <!-- Email address input -->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" required />
+                                <label for="email">Email address</label>
+                                <div class="invalid-feedback">An email is required.</div>
+                                <div class="invalid-feedback">Email is not valid.</div>
+                            </div>
+                            <!-- Message input -->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
+                                <label for="message">Message</label>
+                                <div class="invalid-feedback">A message is required.</div>
+                            </div>
+                            <!-- Submit Button -->
+                            <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
+                        </form>
+                        <!-- Success/Error Messages -->
+                        <div id="form-messages" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">My City</h4>
+                        <p class="lead mb-0">
+                            Karur
+                            <br />
+                            Tamil Nadu, India
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/gondimalla.deepesh/"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://x.com/gvdeepesh007"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/veeradeepesh/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/deepesh_btech/"><i class="fab fa-fw fa-instagram"></i></a>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <p class="lead mb-0">
+                            Veera Deepesh Gondimalla
+                        </p>
+                        <p class="lead mb-0">
+                            Bachelor of Technology - AI
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Education Modal -->
+        <div class="modal fade" id="educationModal" tabindex="-1" aria-labelledby="educationModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-uppercase " id="educationModalLabel">Education</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <!-- About BTech Engineering Card -->
+                        <div class="education-card" id="btech-card">
+                            <img src="{% static 'assets/mahindra_university_logo.png' %}" alt="Mahindra University Logo" class="institution-logo">
+                            <h4 class="education-title">Bachelor of Technology , Artificial Intelligence</h4>
+                            <p class="education-details">
+                                <strong>Mahindra University</strong><br>
+                                Aug 2020 - Jun 2024<br>
+                                <strong>Grade:</strong> 7.70
+                            </p>
+                            <p class="education-details">
+                                <strong>Grade Summary: </strong>
+                            </p>
+                            <!-- Line Chart for BTech -->
+                            <canvas id="educationLineChart"></canvas>
+                        </div>
+
+                        <!-- About Intermediate (MPC) Card -->
+                        <div class="education-card" id="intermediate-card">
+                            <img src="{% static 'assets/st_joseph_logo.jpeg' %}" alt="Mahindra University Logo" class="institution-logo">
+                            <h4 class="education-title">Intermediate (MPC)</h4>
+                            <p class="education-details">
+                                <strong>St. Joseph's Junior College, Kurnool</strong><br>
+                                June 2018 - Apr 2020<br>
+                                <strong>Marks:</strong> 912<br>
+                                <strong>Grade:</strong> 9.59
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Modal 2-->
+        <!-- Projects Modal -->
+        <div class="modal fade" id="projectsModal" tabindex="-1" aria-labelledby="projectsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-uppercase " id="educationModalLabel">Projects</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Conversational Chatbot for PDFs Card -->
+                        <div class="project-card">
+                            <a href="https://deepeshpdfchatter.streamlit.app/" target="_blank" class="project-card">
+                                <img src="{% static 'assets/conversational_pdf.jpg' %}" alt="Conversational Chatbot for PDFs" class="project-logo">
+                                <h4>Conversational Chatbot for PDFs</h4>
+                                <p>Built a Retrieval-Augmented Generation system to query and retrieve information from PDFs using LangChain, Chroma, and Streamlit. Used Gemini pro model as LLM. Has a functionality to chat with the assistant about the PDFs and a special feature - read aloud. Tools/Technologies: Python, LangChain, Chroma, Streamlit.</p>
+                            </a>
+                        </div>
+                        
+                        <!-- Presentation Video Analysis using CV Card -->
+                        <div class="project-card">
+                            <img src="{% static 'assets/presentation_analysis.jpg' %}" alt="Presentation Video Analysis using CV" class="project-logo">
+                            <h4>Presentation Video Analysis using CV</h4>
+                            <p>The project aims to build an AI model that analyzes presentation videos and gives the scores of 5 personality traits for examining a person. Made a 3-D Conv-LSTM model. RMSE error was 0.05 on test set. Tools/Techniques: CV (Computer Vision), Open CV, Pytorch, pydub.</p>
+                        </div>
+                        
+                        <!-- Exploratory Data Analysis - Zomato Data Card -->
+                        <div class="project-card">
+                            <img src="{% static 'assets/data_analytics_logo.jpg' %}" alt="Exploratory Data Analysis - Zomato Data" class="project-logo">
+                            <h4>Exploratory Data Analysis - Zomato Data</h4>
+                            <p>This project aims to gain insights from the Zomato sales dataset for dining and deliveries. Data Cleaning, processing, analysis, and visualization are done using Python libraries such as matplotlib, seaborn, etc. Tools/libraries: re, data analytics, numpy, pandas, seaborn, matplotlib.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Portfolio Modal 3-->
+        <!-- Experience Modal -->
+        <div class="modal fade" id="experienceModal" tabindex="-1" aria-labelledby="experienceModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-uppercase " id="educationModalLabel">Experience</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Experience Card 1 -->
+                        <div class="experience-card">
+                            <div class="card-header">
+                                <img src="{% static 'assets/cyber_sapient_logo.jpeg' %}" alt="Cyber Sapient Logo" class="company-logo">
+                                <div class="header-text">
+                                    <h4>AI and DataScience Research Intern</h4>
+                                    <p><strong>Company:</strong> Cyber Sapient</p>
+                                    <p><strong>Duration:</strong> June 2023 - Sept 2023</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>Work:</strong></p>
+                                <ul>
+                                    <li> Learn about different real time use cases of AI in medical, automobile and other industries.</li>
+                                    <li> Implement some use cases of NLP and Computer Vision in real world problems.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Experience Card 2 -->
+                        <div class="experience-card">
+                            <div class="card-header">
+                                <img src ="{% static 'assets/AI_Unika_logo.webp' %}"alt="AI Unika Technologies Logo" class="company-logo">
+                                <div class="header-text">
+                                    <h4>AI Engineer Intern</h4>
+                                    <p><strong>Company:</strong> AI Unika Technologies</p>
+                                    <p><strong>Duration:</strong> Feb 2024 - Aug 2024</p>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>Work:</strong></p>
+                                <ul>
+                                    <li>Worked as a computer vision engineer to train and test models, as well as managing datasets and annotations of Road assets.</li>
+                                    <li>Worked as a generative AI engineer and led the project to add a generative AI feature for the company's main project, involving Text2SQL models using LLMs.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Modal 4-->
+        <!-- Skills Modal -->
+        <div class="modal fade" id="skillsModal" tabindex="-1" aria-labelledby="skillsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-uppercase " id="educationModalLabel">Skills</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Technical Skills List -->
+                        <div class="skills-card">
+                            <h4 class="skills-title">Technical Skills</h4>
+                            <ul class="skills-list">
+                                <li><strong>Python:</strong> Proficient in Python, with experience in building data pipelines, machine learning models, and automation scripts.</li>
+                                <li><strong>Data Analytics:</strong> Skilled in data cleaning, processing, and analyzing large datasets to derive actionable insights.</li>
+                                <li><strong>Machine Learning:</strong> Experience in building and deploying machine learning models, including regression, classification, and clustering.</li>
+                                <li><strong>Deep Learning:</strong> Knowledgeable in neural networks, with hands-on experience in training and fine-tuning deep learning models using frameworks like TensorFlow and PyTorch.</li>
+                                <li><strong>Natural Language Processing (NLP):</strong> Expertise in text processing, sentiment analysis, and language modeling using NLP techniques.</li>
+                                <li><strong>Large Language Models (LLMs):</strong> Familiar with implementing and fine-tuning large-scale models for various applications, such as text generation and summarization.</li>
+                                <li><strong>Computer Vision:</strong> Experience in developing computer vision models for object detection, image classification, and video analysis.</li>
+                            </ul>
+                        </div>
+                        <!-- Tools List -->
+                        <div class="skills-card">
+                            <h4 class="skills-title">Tools</h4>
+                            <ul class="skills-list">
+                                <li><strong>Scikit-learn:</strong> Used for building and evaluating machine learning models with a wide range of algorithms.</li>
+                                <li><strong>PyTorch:</strong> Experience in developing deep learning models with PyTorch, including custom neural network architectures.</li>
+                                <li><strong>Hugging Face Framework:</strong> Proficient in using Hugging Face for NLP tasks, including model training and deployment.</li>
+                                <li><strong>Git:</strong> Skilled in version control and collaboration using Git, including branching, merging, and resolving conflicts.</li>
+                                <li><strong>NumPy:</strong> Proficient in numerical computing with NumPy for array manipulation, linear algebra, and other mathematical operations.</li>
+                                <li><strong>Pandas:</strong> Experience in data manipulation and analysis with Pandas, including DataFrame operations, data cleaning, and aggregation.</li>
+                                <li><strong>LangChain:</strong> Knowledgeable in using LangChain for building NLP applications, including text generation and conversational AI.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <!-- Extra Curricular Activities Modal -->
+        <div class="modal fade" id="extracurricularModal" tabindex="-1" aria-labelledby="extraCurricularModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-uppercase " id="educationModalLabel">Extra Curricular Activities</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Playing Sports Card -->
+                        <div class="extra-curricular-card">
+                            <h4 class="extra-curricular-title">Playing Cricket, Volleyball, Kho Kho</h4>
+                            <p>Passionate about sports, I actively participate in cricket, volleyball, and kho kho. These team sports have helped me develop leadership, teamwork, and strategic thinking skills.</p>
+                        </div>
+                        <!-- Reading Books Card -->
+                        <div class="extra-curricular-card">
+                            <h4 class="extra-curricular-title">Reading Books</h4>
+                            <p>An avid reader, I enjoy exploring a wide range of genres, from fiction to self-help books. Reading not only broadens my knowledge but also enhances my critical thinking and creativity.</p>
+                        </div>
+                        <!-- Online Contests Card -->
+                        <div class="extra-curricular-card">
+                            <h4 class="extra-curricular-title">Actively Participating in Online Contests</h4>
+                            <p>I regularly engage in online coding contests and hackathons. Competing in these challenges sharpens my problem-solving abilities and keeps me updated with the latest trends in technology.</p>
+                        </div>
+                        <!-- Mathematics Club President Card -->
+                        <div class="extra-curricular-card">
+                            <h4 class="extra-curricular-title">Mathematics Club President</h4>
+                            <p>As the president of the Mathematics Club at my university, I organize and lead various math-related events and workshops. This role has honed my leadership skills and deepened my love for mathematics.</p>
+                        </div>
+                        <!-- Watching Anime Card -->
+                        <div class="extra-curricular-card">
+                            <h4 class="extra-curricular-title">Watching Anime</h4>
+                            <p>A fan of anime, I enjoy the unique storytelling and animation styles. Anime inspires my creativity and offers new perspectives on various life themes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <!-- Blog Post Modal -->
+        <div class="modal fade" id="blogsModal" tabindex="-1" aria-labelledby="blogsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-uppercase" id="educationModalLabel">Blog Posts</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="blog-posts-container">
+                            <!-- Blog posts will be injected here by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Success Modal -->
+        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="successModalLabel">Success</h5>
+                        <button type="button" class="btn-close" aria-label="Close" onclick="closeSuccessModal()"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Message sent successfully!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chatbot Widget -->
+        <div id="chatbot-widget" style="position: fixed; bottom: 50px; right: 50px; z-index: 1000;">
+            <button id="chatbot-toggle" style="border: none; background: linear-gradient(135deg, #1abc9c, #16a085); color: #fff; border-radius: 50%; width: 60px; height: 60px; cursor: pointer; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease;">
+                <img src="/static/chatbot/images/chat-icon.png" alt="Chat" style="width: 28px; height: 28px;">
+            </button>
+            <div id="chatbot-window" style="display: none; position: absolute; bottom: 70px; right: 0; width: 420px; height: 520px; border: 1px solid #ddd; border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); background: #f7f7f7;">
+                <!-- Chat header -->
+                <div id="chatbot-header" style="padding: 15px; background: linear-gradient(135deg, #1abc9c, #16a085); color: #fff; border-radius: 15px 15px 0 0; font-size: 18px; font-weight: bold;">
+                    Chat with Me
+                    <button id="chatbot-close" style="border: none; background: transparent; color: #fff; float: right; font-size: 20px; cursor: pointer;">&times;</button>
+                </div>
+                <!-- Chat content -->
+                <div id="chatbot-content" style="padding: 15px; height: calc(100% - 70px); overflow-y: auto; font-family: 'Arial', sans-serif;">
+                    <!-- Chat messages will be dynamically inserted here -->
+                </div>
+                <!-- Chat input -->
+                <div id="chatbot-input" style="padding: 10px; border-top: 1px solid #ddd; background: #fff; border-radius: 0 0 15px 15px;">
+                    <input type="text" id="chat-input-field" style="width: calc(100% - 70px); padding: 10px; border: 1px solid #ddd; border-radius: 20px; box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); font-size: 14px;" placeholder="Type a message...">
+                    <button id="chat-send-button" style="width: 50px; height: 40px; background: linear-gradient(135deg, #1abc9c, #16a085); color: #fff; border: none; border-radius: 10%; cursor: pointer; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: background 0.3s ease;">Send</button>
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+
+       <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Bootstrap JavaScript Bundle with Popper -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+        <!-- Firebase SDKs -->
+        <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js"></script>
+
+        <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+        <!-- Your custom Firebase config and functionality -->
+        <script type="module" src="{% static 'firebase-config.js' %}"></script>
+        <script src="{% static 'scripts.js' %}" type="module"></script>
+        <script src="{% static 'contact.js' %}" type="module"></script>
+        <script src="{% static 'blogs.js' %}"></script>
+        <script src="{% static 'chatbot/js/chat.js' %}"></script>
+
+        <!-- SB Forms JS -->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    </body>
+</html>

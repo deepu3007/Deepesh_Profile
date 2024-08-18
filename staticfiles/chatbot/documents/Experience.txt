@@ -1,0 +1,33 @@
+Experience of Veera Deepesh Gondimalla
+
+Company Name :-Cyber Sapient
+June 2023 - September 2023
+Role :- AI and Data Science Research Intern
+
+During my internship at Cyber Sapient, I was immersed in studying various use cases of Artificial Intelligence (AI). My role involved conducting in-depth research on AI applications, exploring how AI can be leveraged to solve real-world problems across different industries. I was responsible for analyzing current AI trends and use cases, and providing insights into potential areas for innovation and improvement.
+
+Key Responsibilities:
+
+Research and Analysis: Conducted comprehensive studies on AI use cases, identifying opportunities for AI implementation and evaluating their impact.
+Documentation: Prepared detailed reports and presentations on AI trends and use cases, offering recommendations based on findings.
+Collaboration: Worked closely with senior researchers and data scientists to understand and contribute to ongoing AI projects.
+Significant Projects:
+
+AI Use Case Study: Analyzed and documented various AI applications in sectors such as healthcare, finance, and retail, providing actionable insights for enhancing AI strategies.
+Trend Analysis Report: Developed a report on emerging AI technologies and their potential use cases, which was used to guide strategic planning.
+
+Company Name :- AI Unika Technologies
+February 2024 - Present
+Role :- AI Engineer Intern
+
+As an AI Engineer Intern at AI Unika Technologies, I have taken on multiple roles involving both computer vision and generative AI. My work focuses on training and testing computer vision models, managing datasets, and enhancing annotations for road assets. Additionally, I have led a project to integrate generative AI features into the company's main project, which includes implementing Text2SQL models using Large Language Models (LLMs).
+
+Key Responsibilities:
+
+Computer Vision Engineering: Trained and tested computer vision models for identifying and analyzing road assets, ensuring accurate dataset management and annotation.
+Generative AI Engineering: Led the development and integration of generative AI features, including Text2SQL models, enhancing the company's main project with advanced AI capabilities.
+Dataset Management: Oversaw the preparation and annotation of datasets, ensuring high-quality data for model training and evaluation.
+Significant Projects:
+
+Road Asset Detection Model: Developed and optimized computer vision models for road asset detection, contributing to improved infrastructure analysis and management.
+Text2SQL Integration: Spearheaded a project to add Text2SQL functionality using LLMs, enabling advanced natural language querying capabilities and enhancing the main project’s functionality.

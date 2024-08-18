@@ -1,0 +1,46 @@
+I am Veera Deepesh Gondimalla, a dedicated and passionate AI engineer with a strong interest in Natural Language Processing (NLP) and auto-generative models. Currently pursuing my Bachelor of Technology (B.Tech) degree in Artificial Intelligence at Mahindra University, I have developed a solid foundation in various aspects of AI, including Machine Learning, Natural Language Processing, and Deep Learning.
+
+Educational Background of Veera Deepesh Gondimalla
+
+Institution: Mahindra University
+Degree: Bachelor of Technology (BTech), Artificial Intelligence
+Duration: August 2020 - June 2024
+Grade: 7.70 CGPA
+
+Academic Achievements:
+
+Semester 1: 5.64
+Semester 2: 6.96
+Semester 3: 7.46
+Semester 4: 7.23
+Semester 5: 8.30
+Semester 6: 7.96
+Semester 7: 7.96
+Semester 8: 10.00
+The progression in my grades over eight semesters reflects my dedication and growing expertise in AI and related fields. The notable improvement in my final semester demonstrates my readiness for advanced challenges and professional roles in AI.
+
+Description:
+Mahindra University offers a rigorous curriculum that emphasizes both theoretical and practical aspects of Artificial Intelligence. During my studies, I engaged deeply with machine learning algorithms, neural network design, and advanced NLP techniques. The program’s comprehensive coursework and hands-on projects have significantly enhanced my technical skills and practical knowledge.
+
+Intermediate Education:
+Institution: St. Joseph's Junior College, Kurnool
+Branch: MPC (Mathematics, Physics, Chemistry)
+Duration: June 2018 - April 2020
+Marks: 912
+Grade Points: 9.59
+
+Description:
+My intermediate education at St. Joseph's Junior College provided a strong foundation in mathematics, physics, and chemistry, which are critical for understanding and solving complex problems in AI. The challenging curriculum prepared me well for the demands of higher education and research in technology.
+
+Projects and Achievements
+
+I take pride in developing a mobile application using Android Studio that has significantly improved the user experience for both students and faculty at Mahindra University. This project showcases my proficiency in Android development and my commitment to leveraging technology to enhance everyday experiences.
+
+Proficient in Python, C, HTML, and CSS, I have the capability to create visually appealing and functional web applications, demonstrating my versatility in various programming environments.
+
+One of my notable achievements includes winning the second prize at the NVIDIA-conducted hackathon, which was part of the 3rd International ICETCI Conference. My team and I developed a chatbot for AI-Assisted Learning utilizing NVIDIA SDKs. We employed the PEFT LoRA fine-tuning technique on the FALCON 7B model to build the chatbot. Additionally, we published our research paper on this project, which can be accessed through the following link: < https://www.researchgate.net/publication/374405533_AI_-_Assisted_Learning_for_NVIDIA_SDKs_and_Toolkits >
+
+At Mahindra University, I serve as the Head of the AI domain in the Mathematics Club. In this role, I lead engaging discussions and organize activities focused on exploring the latest advancements in AI. This position allows me to foster a collaborative learning environment and stay updated with emerging trends in the field.
+
+Additionally, I actively participate in KHO-KHO as part of our university team. This involvement helps me enhance my teamwork, discipline, and strategic thinking skills, contributing to my overall personal and professional growth.
+

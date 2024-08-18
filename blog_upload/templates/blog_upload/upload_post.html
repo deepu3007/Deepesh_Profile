@@ -1,0 +1,135 @@
+<!-- blog_upload/templates/blog_upload/upload_post.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Blog Post</title>
+    <link href="{% static 'styles.css' %}" rel="stylesheet" />
+    <link rel="icon" href="{% static 'assets/portfolio.png' %}" type="image/x-icon">
+      <!-- Font Awesome icons (free version)-->
+      <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <!-- Google fonts-->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #1abc9c;
+        }
+
+        input[type="text"], 
+        textarea, 
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button[type="submit"] {
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .form-group.error input,
+        .form-group.error textarea {
+            border-color: #1abc9c;
+        }
+
+        .form-group.error label {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Upload Post Deepesh</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ form.title.label_tag }}
+                {{ form.title }}
+                {% if form.title.errors %}
+                    <div class="error">{{ form.title.errors }}</div>
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.content.label_tag }}
+                {{ form.content }}
+                {% if form.content.errors %}
+                    <div class="error">{{ form.content.errors }}</div>
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.image.label_tag }}
+                {{ form.image }}
+                {% if form.image.errors %}
+                    <div class="error">{{ form.image.errors }}</div>
+                {% endif %}
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

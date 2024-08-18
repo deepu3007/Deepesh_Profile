@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    {%load static%}
+    <link rel="stylesheet" type="text/css" href="{% static 'chatbot/css/chat.css' %}">
+</head>
+<body>
+    <!-- Chatbot Widget -->
+    <div id="chatbot-widget">
+        <button id="chatbot-toggle">
+            <img src="{% static 'chatbot/images/chat-icon.png' %}" alt="Chat">
+        </button>
+        <div id="chatbot-window">
+            <!-- Chat header -->
+            <div id="chatbot-header">
+                Chat with Me
+                <button id="chatbot-close">&times;</button>
+            </div>
+            <!-- Chat content -->
+            <div id="chatbot-content">
+                <!-- Chat messages will be dynamically inserted here -->
+            </div>
+            <!-- Chat input -->
+            <div id="chatbot-input">
+                <input type="text" id="chat-input-field" placeholder="Type a message...">
+                <button id="chat-send-button">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script src="{% static 'chatbot/js/chat.js' %}"></script>
+</body>
+</html>
