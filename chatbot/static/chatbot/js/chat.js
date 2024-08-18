@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Retrieve CSRF token
     const csrftoken = getCookie('csrftoken');
+    console.log('CSRF token retrieved:', csrftoken);
 
     const toggleButton = document.getElementById('chatbot-toggle');
     const chatWindow = document.getElementById('chatbot-window');
@@ -63,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         chatContent.appendChild(messageDiv);
         chatContent.scrollTop = chatContent.scrollHeight;
+        console.log('Message sent:', message, 'Is user:', isUser);
     }
 
     // Function to handle user message and fetch response from the server
@@ -82,11 +84,18 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .then(response => response.json())
             .then(data => {
-                sendMessage(data.response, false);
+                console.log('Server response:', data);
+                if (data.response) {
+                    sendMessage(data.response, false);
+                } else {
+                    console.warn('No response field in server response');
+                }
             })
             .catch(error => {
-                console.error('Error:', error);
+                console.error('Error fetching response from server:', error);
             });
+        } else {
+            console.warn('Empty message submitted');
         }
     }
 
@@ -95,6 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
     sendButton.addEventListener('click', () => {
         clearTimeout(debounceTimeout);
         debounceTimeout = setTimeout(handleUserMessage, 300);
+        console.log('Send button clicked');
     });
 
     // Send message on Enter key press
@@ -102,6 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (event.key === 'Enter') {
             event.preventDefault();  // Prevent default form submission
             handleUserMessage();
+            console.log('Enter key pressed');
         }
     });
 
@@ -113,11 +124,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isFirstTime && isChatWindowHidden) {
             sendMessage("Hello! I am VeerBot an AI assistant. I am here to assist you to know more about Veera Deepesh Gondimalla.", false);
             isFirstTime = false;  // Set the flag to false after the first message is sent
+            console.log('First-time message sent');
         }
     });
 
     // Close chat window
     closeButton.addEventListener('click', () => {
         chatWindow.style.display = 'none';
+        console.log('Chat window closed');
     });
 });
